@@ -20,6 +20,8 @@
     <!-- favicon  -->
     <link rel="shortcut icon" type="image/png" href="/App/assets/favicon.png" />
     <link rel="stylesheet" href="./Design/main.css" />
+    <link rel="stylesheet" href="../css/plugins.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -30,61 +32,42 @@
     />
   </head>
   <body>
-    <header>
+    <div class="headeer">
       <!-- ================Navigation Bar Starts here ======================= -->
-      <nav class="navbar navbar-expand-lg navStyle">
+      <nav class="naavbar naavbar-expand-lg navStyle">
         <p><img src="/App/assets/logo.png" alt="logo" height="60px" /></p>
         <span></span>
-        <button class="navbar-toggle">
-          <span class="header-span">
-            <i class="fa fa-align-center iconStyle"></i>
+        <button class="naavbar-toggle" onclick="toggleMenu()">
+          <span class="headeer-span">
+            <i class="fa fa-align-center iconstyle"></i>
           </span>
         </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav navList">
+        <div class="collapse naavbar-collapse" id="navbarSupportedContent">
+          <ul class="naavbar-nav navList">
             <li class="nav-item active">
               <a href="index.html" class="nav-link">HOME</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">Who we are</a>
+              <a href="aboutus.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link">What We Do</a>
+              <a href="#our-programs" class="nav-link">What We Do</a>
             </li>
             <li class="nav-item">
-              <div class="dropdown">
-                <button class="dropbtn" style="text-transform: uppercase">
-                  Our programs
-                </button>
-                <div class="dropdown-content">
-                  <a href="nyg.html" style="color: black">NYG</a>
-                  <a href="robotics.html" style="color: black">Robotics</a>
-                  <a href="program.html" style="color: black"
-                    >Website Development</a
-                  >
-                  <a href="program.html" style="color: black"
-                    >App Development</a
-                  >
-                  <a href="program.html" style="color: black">Networking</a>
-                  <a href="program.html" style="color: black"
-                    >Corporate Training</a
-                  >
-                  <a href="program.html" style="color: black">Domain Hosting</a>
-                </div>
-              </div>
+              <a href="#our-programs" class="nav-link">Our programs</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link">contact</a>
+              <a href="#qoute" class="nav-link">contact</a>
             </li>
             <li class="nav-item">
-              <a href="gallery.html" class="nav-link">gallery</a>
+              <a href="#qoute" class="nav-link">gallery</a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
     <!-- ================Carousel Starts here ======================= -->
-    <section class="slider-section">
+    <div class="slider-section">
       <div class="slider-wrapper">
         <div class="slider-imgs">
           <div
@@ -113,13 +96,15 @@
           <h2>Kakebe</h2>
         </div>
       </div>
-    </section>
+    </div>
     <section class="form-ctr">
       <div class="ctr">
-        <div class="row">
+        <div class="rowww">
           <div class="btn-text">
             <p>
-              <a href="#" class="btn" style="font-size: 20px">Register here</a>
+              <a href="#" class="---btn" style="font-size: 20px"
+                >Register here</a
+              >
             </p>
             <h6 style="align-content: center; text-align: center">
               Kakebe Women in Tech
@@ -129,7 +114,7 @@
       </div>
     </section>
     <!-- ================Main Starts here ======================= -->
-    <div class="container-ctr">
+    <div class="container-ctr" id="we">
       <div className="hero-content">
         <h1>Who We Are</h1>
         <p class="justify-text">
@@ -143,71 +128,177 @@
         </p>
       </div>
       <div className="hero-image">
-        <img src="../assets/bg2.jpg" width="400px" alt="image" />
+        <img src="../assets/bg2.jpg" alt="image" />
       </div>
     </div>
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="our-programs">
+      <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-secondary text-uppercase">Our Services</h6>
+          <h1 class="mb-5">Explore Our Services</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/techtalk.jpg" alt="" />
+              </div>
+              <h4 class="mb-3">Robotics in Schools</h4>
+              <p>
+                Practical Learning of applications and programing of sensors
+                outreach in learning institutions.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/training.JPG" alt="" />
+              </div>
+              <h4 class="mb-3">Internship Programs</h4>
+              <p>
+                Internship is one of our programs giving opportunites to
+                students to join our core team and learn.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/rob.JPG" alt="" />
+              </div>
+              <h4 class="mb-3">Computer skills Trainings</h4>
+              <p>
+                We provide corperate ICT trainings to students, instituions,
+                offices and NGOs to equip the workers.
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/techtalk.jpg" alt="" />
+              </div>
+              <h4 class="mb-3">Website Development</h4>
+              <p>
+                Efficient website development for impactful online presence and
+                business growth
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/training.JPG" alt="" />
+              </div>
+              <h4 class="mb-3">App Development</h4>
+              <p>
+                Impactful app development for seamless user experiences and
+                business expansion
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item p-4">
+              <div class="overflow-hidden mb-4">
+                <img class="img-fluid" src="../assets/rob.JPG" alt="" />
+              </div>
+              <h4 class="mb-3">Software Development</h4>
+              <p>
+                Streamlined software development for efficient, growth-focused
+                businesses
+              </p>
+              <a class="btn-slide mt-2" href=""
+                ><i class="fa fa-arrow-right"></i><span>Read More</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
 
     <!-- ================Footer Starts here ======================= -->
-    <div class="container">
-      <div class="row">
-        <div class="ctr-txet text-center">
-          <h3>Some of the key programs resolving around the company.</h3>
+    <!-- Feature Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+      <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+          <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase mb-3">
+              More of our programs
+            </h6>
+            <h1 class="mb-5">Tech For Good!</h1>
+            <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+              <i class="fa fa-laptop text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>Computer skills Trainings</h5>
+                <p class="mb-0">
+                  Professional ICT training for students, institutions, offices,
+                  and NGOs, empowering participants with essential skills
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+              <i class="fa fa-female text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>Women in Tech</h5>
+                <p class="mb-0">
+                  Empowering women in tech through specialized programs,
+                  fostering skill development and career opportunities
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+              <i class="fa fa-th text-primary fa-3x flex-shrink-0"></i>
+              <div class="ms-4">
+                <h5>Lango Innovation Challenge</h5>
+                <p class="mb-0">
+                  LIC: Fostering innovation and entrepreneurship for community
+                  growth and impactful solutions in Northern UG
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 pe-lg-0 wow fadeInRight"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute img-fluid w-100 h-100"
+                src="../assets/techtalk.jpg"
+                style="object-fit: cover"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card-ctr">
-      <div class="card-single">
-        <img class="card-i" src="../assets/rob.JPG" alt="Card image cap" />
-        <div class="card-content">
-          <h5 class="card-title">Robotics in Schools</h5>
-          <p class="card-text">
-            Practical Learning of applications and programing of sensors
-            outreach in learning institutions.
-          </p>
-          <a href="robotics.html" class="--btn">Read more ...</a>
-          <a href="#"
-            ><button type="button" class="--btn-success">Apply</button></a
-          >
-        </div>
-      </div>
-      <div class="card-single">
-        <img
-          class="card-i"
-          src="../assets/gallery/internship.JPG"
-          alt="Card image cap"
-        />
-        <div class="card-content">
-          <h5 class="card-title">Internship Programs</h5>
-          <p class="card-text">
-            Internship is one of our programs giving opportunites to students to
-            join our core team and learn.
-          </p>
-          <a href="robotics.html" class="--btn">Read more ...</a>
-          <a href="#"
-            ><button type="button" class="--btn-success">Apply</button></a
-          >
-        </div>
-      </div>
-      <div class="card-single">
-        <img class="card-i" src="../assets/training.JPG" alt="Card image cap" />
-        <div class="card-content">
-          <h5 class="card-title">Computer skills Trainings</h5>
-          <p class="card-text">
-            We provide corperate ICT trainings to students, instituions, offices
-            and NGOs to equip the workers.
-          </p>
-          <a href="robotics.html" class="--btn">Read more ...</a>
-          <a href="#"
-            ><button type="button" class="--btn-success">Apply</button></a
-          >
-        </div>
-      </div>
-    </div>
+    <!-- Feature End -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="qoute">
       <div class="basic-4 bg-gray bgteam">
-        <div class="container">
-          <div class="row">
+        <div class="---container">
+          <div class="rowww">
             <div class="col-text">
               <h4>
                 Our team of highly skilled designers and and software engineers
@@ -222,43 +313,57 @@
       </div>
     </div>
     <!-- ================Footer Starts here ======================= -->
-    <footer class="footer">
-      <div class="container bottom_border">
-        <div class="-ftr-row">
-          <div class="col-sm-6 col-md col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2 text-center">
-              About Us
-            </h5>
-            <p class="justify-text-left" style="font-size: 13px">
-              Kakebe Technologies is a software company based in Lira City and
-              one of the market leaders in offering science and technology
-              services to the public in a time -saving and efficient way in
-              Northern Uganda.
-            </p>
-          </div>
-          <div class="col-sm-6 col-md col-4 col">
-            <h5 class="headin5_amrc col_white_amrc pt2 text-center">
-              Quick links
-            </h5>
-            <ul class="footer_ul_amrc text-center">
-              <li><a href="http://webenlance.com">Kakebe Shop</a></li>
-              <li><a href="http://webenlance.com">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2 text-center">
-              We would love to hear from you
-            </h5>
-            <a href="mailto:service@kakebe.com" class="text-light">
-              <p class="text-center" style="font-size: 13px">
-                service@kakebe.com
-              </p>
-            </a>
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="row" id="row1">
+          <a href="#" id="footer-logo">Kakebe Technologies</a>
+          <p>
+            Kakebe: Empowering through science and technology. Offering
+            innovative ICT services, training, mentorship, and programs for
+            community transformation.
+          </p>
+          <div class="socail-links">
+            <i class="fa fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <!-- <i class="fa-brands fa-pinterest-p"></i> -->
           </div>
         </div>
+        <div class="row" id="row2">
+          <h3>UseFull Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Programs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="row" id="row3">
+          <h3>Other Links</h3>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">App Design</a></li>
+            <li><a href="#">Internship</a></li>
+            <li><a href="#">Term & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="row" id="row4">
+          <h3>Download Kakebe Shop App</h3>
+          <img src="../assets/app.png" alt="" />
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <div class="copyright">
+        <p><small>CopyRight &copy;Kakebe Technologies Limited</small></p>
       </div>
     </footer>
+    <!-- Back to Top -->
 
+    <script src="../js/wow/wow.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

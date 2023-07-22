@@ -22,3 +22,16 @@ const slider = () => {
 };
 slider();
 //Image Slider End
+
+//toggle the menu bar on click
+function toggleMenu() {
+  var navbarCollapse = document.getElementById("navbarSupportedContent");
+  if (navbarCollapse.style.display === "block") {
+    navbarCollapse.style.display = "none";
+  } else {
+    navbarCollapse.style.display = "block";
+  }
+}
+
+// Initiate the wowjs
+new WOW().init();
